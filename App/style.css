@@ -1,0 +1,109 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	width: 100%;
+	height: auto;
+	overflow: auto;
+	align-content: center;
+}
+#wrapper{
+	width: 100%;
+	height: auto;
+	overflow: auto;
+	
+	
+	
+	
+}
+
+h1{
+	text-align: center;
+	font-size: 120px;
+	margin: 0;
+	
+}
+
+h3{
+	text-align: center;
+	
+	
+	
+}
+
+#account{
+	padding: 15% 0 2% 0;
+	margin: 0;
+	font-size: 60px;
+	
+	
+}
+#password{
+	font-size: 40px;
+	float: right;
+	padding: 0 7% 0 0;
+	
+	
+}
+.signIn{
+	text-align: center;
+	
+}
+	
+
+.signUp{
+	text-align: center;
+	
+}
+
+
+input{
+	border: 1px solid;
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	padding: 10% 0 0 0;
+	font-size: 70px;
+	text-align: center;
+}
+
+#home img{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+padding-bottom: 3%;
+padding-top: 3%;
+}
+
+#homeTwo img{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+padding-bottom: 3%;
+padding-top: 8%;
+}
+#section{
+    padding-bottom: 8%;
+    
+    
+}
+
+#newsOne{
+    text-align: center;
+    color: green;
+    font-size: 80px;
+}
+
+#newsTwo{
+    text-align: center;
+    color: green;
+    
+}
+
+.newsOne h3{
+    font-size: 80px;
+    
+    
+}
