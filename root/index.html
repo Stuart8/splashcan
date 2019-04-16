@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+    <head>
+    
+        <title>Splash Can</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet">
+
+    
+    </head>
+<body>
+    
+    <div id="rotate">
+    </div>
+    
+    <div class="menu-button">
+        <p>MENU</p>
+    </div>
+    
+    
+    
+    <div class="menu">
+        <div class="mcont">
+        <a class="link-01">home</a>
+        <a class="link-02">about</a>
+        <a class="link-03">feedback</a>
+        <a class="link-04">help</a>
+        </div>
+    </div>
+    
+    <div id="home">
+        
+        <div class="overlay">
+        <div class="header">
+            <img src="img/Splash-can-logo.svg" alt="Splash can logo">
+            <p>Sign in /<br>Register</p>
+        </div>
+        <div class="footer">
+            <img src="img/explore-shutter.svg" alt="Explore">
+            <figcaption>Explore</figcaption>
+        </div>                
+        </div>
+        
+    </div>                                      
+    
+    <div id="about">
+    <div class="overlay">
+        <h1>Splash Can</h1>
+		<h2>Benefits of our App</h2>
+		<p>The app enables the individual to create grafitti in a virtual world by using augmented reality.</p>
+		<h2>How it Works</h2>
+		<p>The app allows the individual to create grafitti using the camera on your mobile which projects it onto the surface of your choice using the augmented reality software.</p>
+		<h2>Advantages</h2>
+		<p>The app has a sharing system that will allow you to view others work.</p>
+    </div>  
+    </div>
+    
+    <div id="feedback">
+        <h1>Splash Can</h1>	
+		
+		<p>Feel free to share your experiences with us, include issues or features you'd like to see in the future</p>
+        
+        <form id="fcont">
+            <input type="text" placeholder="Name"/>
+			
+            <input type="text" placeholder="Email"/>
+			
+            <input type="text" placeholder="Message..."/>
+		  <button>PLACEHOLDER</button>
+        </form>
+        
+    </div>
+    
+    <div id="help">
+    </div>
+    
+    <script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+    
+    <script>
+        $(document).ready(function(){
+            $(".menu-button").click(function(){
+                $(".menu").fadeToggle()
+            })
+            
+        })
+    </script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
