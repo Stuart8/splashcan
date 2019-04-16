@@ -1,0 +1,124 @@
+@charset "utf-8";
+/* CSS Document */
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.hero{
+	background:url("../img/about-background.jpg")no-repeat;
+	height: 100vh;
+	background-size: cover;
+}
+
+.overlay{
+	height: 100vh;
+	width: 100%;
+	background: rgba(20,20,20,0.71);	
+	}
+
+h1{
+	color: #FFFFFF;
+	margin: 0px;
+	padding: 20px;
+	text-align: center;
+}
+h2{
+	color: #FFFFFF;	
+	text-align: center;
+	margin: 40px 30px;
+}
+
+p{
+	color: #ffffff;
+	text-align: center;
+	font-size: 18px;
+	margin: 15px;
+}
+
+.hero1{
+	background: url("../img/explore-background.jpg")no-repeat;
+	height: 100vh;
+	background-size: cover;
+}
+
+#paint-icons{
+	height:70px;
+	width:70%;
+	border-radius: 10px;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	border: 6px solid #ffffff;
+	border-top:none;
+	margin: 0 auto;
+}
+
+#paint-icons img{
+	display: inline;	
+	height: 70px;
+	color: #fff;
+	padding: 0 22px;
+	margin: 0;
+}
+
+section{
+	height: 30px;
+	width: 667px;
+}
+
+div .slide{
+	width:221px;
+	height: 30px;
+	position:relative;	
+	margin: 0 auto;
+}
+
+div .social{
+	width: 45px;
+	height:175px;
+	background:#C2C2C2;	
+	float:right;
+	position: relative;
+	right: 9px;
+	border:#FFFFFF 3px solid;
+	border-radius: 10px;
+}
+div .social #text{
+	color:#FFFFFF;
+	transform: rotate(90deg);	
+	width: 0px;
+	height: 86px;
+	
+	
+}
+#export{
+	position: absolute;
+	right: 4px;
+	top: 8px;
+}
+
+#heart{
+	width: 70px;
+	height: 70px;
+	float:right;
+	position:relative;
+	bottom: 87px;
+}
+
+#Artist{
+	width: 150px;
+	height: 100px;
+	margin: 0 auto;
+	padding-top: 212px;
+}
+
+#Artist h3{
+	color: #ffffff;
+}
+
+#Artist h4{
+	color: #ffffff;
+}
+
+
+
