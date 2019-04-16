@@ -1,0 +1,44 @@
+@charset "utf-8";
+/* CSS Document */
+
+body,html{
+	height:100%;
+	margin:0;
+}
+
+.hero{
+	background:url("../img/blackboard-business-chalkboard-355988.jpg")no-repeat;
+	height:100vh;
+	background-size:cover;
+}
+
+.overlay{
+	height:100vh;
+	width:100%;
+	background:rgba(20,20,20,0.71);
+}
+
+h1{
+	color:#FFFFFF;
+	margin:0px;
+	padding:20px;
+	text-align: center;
+}
+
+p{
+	color:#ffffff;
+	text-align:center;
+}
+
+
+input[type=text]{
+	border-radius: 10px;
+	
+}
+
+.container{
+	  width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
