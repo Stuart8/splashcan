@@ -6,14 +6,43 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
+h1{
+    font-size: 100px;
+}
+
+h2{
+    font-size: 80px;
+}
+
+p{
+    font-size: 60px;
+}
+
+.cont{
+    width: 90%;
+    margin: auto auto;
+}
+
 #rotate{
     width: 100%;
     height: 100vh;
     background: url(../img/Rotatedevice.png) center;
+    background-color: #c0c0c0;
     background-size: contain;
     position: absolute;
     display: none;
     z-index: 100;
+}
+
+#rotatep{
+    width: 100%;
+    height: 100vh;
+    background: url(../img/Rotatedeviceport.png) center no-repeat;
+    background-color: #c0c0c0;
+    background-size: contain;
+    position: absolute;
+    display: none;
+    z-index: 600;
 }
 
 /*
@@ -29,7 +58,7 @@ body{
     width: 100px;
     height: 300px;
     position: absolute;
-    z-index: 200;
+    z-index: 100;
     background: rgba(80, 80, 80, 0.78);
     border-radius: 0% 50% 50% 0%;
     border-style: solid;
@@ -38,7 +67,7 @@ body{
     border-right-color: #fff;
     border-bottom-color: #fff;
     top: 50%;
-    transform: translateY(-300px);
+    transform: translateY(-50%);
 }
 
 .menu-button p{
@@ -55,6 +84,7 @@ body{
     width: 100%;
     height: 100vh;
     display: none;
+    z-index: 100;
 }
 
 .mcont{
@@ -146,6 +176,118 @@ body{
     text-align: center;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#explore{
+    background:url("../img/wall.jpg")no-repeat;
+	height: 100vh;
+	background-size: cover;
+    display: none;
+}
+
+#paint-icons{
+	height:70px;
+	width:70%;
+	border-radius: 10px;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	border: 6px solid #ffffff;
+	border-top:none;
+	margin: 0 auto;
+}
+
+#paint-icons img{
+	display: inline;	
+	height: 70px;
+	color: #fff;
+	padding: 0 22px;
+	margin: 0;
+}
+
+section{
+	height: 30px;
+	width: 667px;
+}
+
+div .slide{
+	width:221px;
+	height: 30px;
+	position:relative;	
+	margin: 0 auto;
+}
+
+div .social{
+	width: 45px;
+	height:175px;
+	background:#C2C2C2;	
+	float:right;
+	position: relative;
+	right: 9px;
+	border:#FFFFFF 3px solid;
+	border-radius: 10px;
+}
+div .social #text{
+	color:#FFFFFF;
+	transform: rotate(90deg);	
+	width: 0px;
+	height: 86px;
+	
+	
+}
+#export{
+	position: absolute;
+	right: 4px;
+	top: 8px;
+}
+
+#heart{
+	width: 70px;
+	height: 70px;
+	float:right;
+	position:relative;
+	bottom: 87px;
+}
+
+#Artist{
+	width: 150px;
+	height: 100px;
+	margin: 0 auto;
+	padding-top: 212px;
+}
+
+#Artist h3{
+	color: #ffffff;
+}
+
+#Artist h4{
+	color: #ffffff;
+}
+
+@media (orientation: portrait){
+    #rotate{
+        display: block;
+    }
+}
+
+@media (orientation: landscape){
+    #rotatep{
+        display: block;
+    }
+}
+
 /*
 ╭━━━┳━━╮╭━━━┳╮╱╭┳━━━━╮
 ┃╭━╮┃╭╮┃┃╭━╮┃┃╱┃┃╭╮╭╮┃
@@ -178,7 +320,6 @@ body{
 #about p{
 	color: #ffffff;
 	text-align: center;
-	font-size: 18px;
 	margin: 15px;
 }
 
@@ -198,28 +339,47 @@ body{
     display: none;
 }
 
-h1{
+#feedback h1{
 	color:#FFFFFF;
 	margin:0px;
 	padding:20px;
 	text-align: center;
 }
 
-p{
+#feedback p{
 	color:#ffffff;
 	text-align:center;
+    width: 80%;
+    margin: 40px auto;
 }
 
 #fcont{
     width: 90%;
-    margin: auto auto;
+    height: 50vh;
+    position: absolute;
+    bottom: 0;
 }
 
-input[type=text]{
-	border-radius: 10px;
-    --width: 500px;
-    width: var(--width);
-    padding-bottom: 50%;
+input{
+	border-radius: 20px;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 20px;
+    font-size: 60px;
+}
+
+input:last-of-type{
+	border-radius: 20px;
+    width: 100%;
+    height: 200px;
+}
+
+button{
+    width: 100%;
+    height: auto;
+    padding: 150px;
+    background: url(../img/paper-plane-solid.svg) center no-repeat;
+    background-size: contain;
 }
 
 /*
@@ -233,4 +393,42 @@ input[type=text]{
 
 #help{
     display: none;
+    background:url("../img/backgroundhelp.jpg") center no-repeat;
+	height:100vh;
+	background-size:cover;
 }
+
+#help h1{
+	color:#FFFFFF;
+	margin:0px;
+	padding:20px;
+	text-align: center;
+}
+
+#help p{
+	color:#ffffff;
+	text-align:center;
+}
+
+#hicons{
+    width: 80%;
+    height: auto;
+    margin: auto auto;
+}
+
+#hicons img{
+    width: calc(100% / 4 - 40px);
+    margin-right: 40px;
+    height: 200px;
+}
+
+#hicons img:last-of-type{
+    margin-right: 0;
+}
+
+#hsave{
+    width: calc(100% / 4 - 40px);
+    height: 200px;
+    margin: auto auto;
+}
+
