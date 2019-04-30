@@ -1,9 +1,20 @@
 @charset "utf-8";
 /* CSS Document */
-
+html{
+    height: 100vh;
+    overflow: hidden;
+}
 body{
     margin: 0;
     font-family: 'Montserrat', sans-serif;
+}
+
+button{
+    border: none;
+    outline: none;
+}button:focus{
+    border: none;
+    outline: none;
 }
 
 h1{
@@ -176,26 +187,38 @@ p{
     text-align: center;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*
+╭━━━┳━╮╭━┳━━━┳╮╱╱╭━━━┳━━━┳━━━╮
+┃╭━━┻╮╰╯╭┫╭━╮┃┃╱╱┃╭━╮┃╭━╮┃╭━━╯
+┃╰━━╮╰╮╭╯┃╰━╯┃┃╱╱┃┃╱┃┃╰━╯┃╰━━╮
+┃╭━━╯╭╯╰╮┃╭━━┫┃╱╭┫┃╱┃┃╭╮╭┫╭━━╯
+┃╰━━┳╯╭╮╰┫┃╱╱┃╰━╯┃╰━╯┃┃┃╰┫╰━━╮
+╰━━━┻━╯╰━┻╯╱╱╰━━━┻━━━┻╯╰━┻━━━╯
+*/
 
 #explore{
-    background:url("../img/wall.jpg")no-repeat;
+    background:url("../img/wall.jpg")no-repeat center;
 	height: 100vh;
-	background-size: cover;
     display: none;
+}
+
+#saving{
+    width: 100%;
+    height: 100vh;
+    background: #fcfcfc;
+    position: absolute;
+    z-index: 100;
+    display: none;
+}
+
+#saving h3{
+    color: #525252;
+    font-weight: 500;
+    font-size: 50px;
+    margin: 0;
+    text-align: center;
+    line-height: 90vh;
+    height: 100vh;
 }
 
 #paint-icons{
@@ -206,32 +229,31 @@ p{
 	border-top-right-radius: 0;
 	border: 6px solid #ffffff;
 	border-top:none;
-	margin: 0 auto;
+	margin:0 auto;
+    color: #fff;
 }
 
-#paint-icons img{
-	display: inline;	
-	height: 70px;
-	color: #fff;
-	padding: 0 22px;
-	margin: 0;
+#paint-icons i{
+	font-size: 50px;
+    line-height: 70px;
+	padding: 0 55px;
 }
 
-section{
-	height: 30px;
-	width: 667px;
-}
-
-div .slide{
-	width:221px;
-	height: 30px;
+.slide{
+	width:50%;
+	height: auto;
+    overflow: auto;
 	position:relative;	
 	margin: 0 auto;
 }
 
+.slide img{
+    width: 100%;
+}
+
 div .social{
 	width: 45px;
-	height:175px;
+	height:50%;
 	background:#C2C2C2;	
 	float:right;
 	position: relative;
@@ -256,25 +278,67 @@ div .social #text{
 #heart{
 	width: 70px;
 	height: 70px;
-	float:right;
-	position:relative;
-	bottom: 87px;
+	position:absolute;
+    right: 4px;
+	bottom: 8px;
 }
 
-#Artist{
-	width: 150px;
-	height: 100px;
-	margin: 0 auto;
-	padding-top: 212px;
+#artist{
+    position: absolute;
+    display: block;
+    bottom: 0;
+	width: 50%;
+	height: auto;
+    overflow: auto;
+	margin: 0 25%;
 }
 
-#Artist h3{
-	color: #ffffff;
+#artist p{
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
 }
 
-#Artist h4{
-	color: #ffffff;
+#artist p:last-child{
+    text-decoration: underline;
 }
+
+#paintthin{
+	height: 100vh;
+    position: absolute;
+    top: 60%;
+    display: none;
+    width: 100%;
+    overflow: hidden;
+}
+
+#paintthick{
+	height: 100vh;
+    position: absolute;
+    top: 30%;
+    display: none;
+    width: 100%;
+    overflow: hidden;
+}
+
+#bucket{
+	height: 100vh;
+    position: absolute;
+    top: 50%;
+    display: none;
+    width: 100%;
+    overflow: hidden;
+}
+
+#canvas{
+    position: absolute;
+    display: block;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    pointer-events: none;
+}
+
 
 @media (orientation: portrait){
     #rotate{
@@ -286,6 +350,28 @@ div .social #text{
     #rotatep{
         display: block;
     }
+    .mcont a{
+        text-transform: uppercase;
+        font-size: 40px;
+        color: #fff;
+        font-weight: 700;
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        padding: 40px 0;
+}
+    
+    .mcont{
+        width: 90%;
+        margin: auto;
+        height: 40vh;
+        position: relative;
+        top: 0;
+        transform: translateY(0);
+}
+    
+    
 }
 
 /*
@@ -360,7 +446,7 @@ div .social #text{
     bottom: 0;
 }
 
-input{
+#fcont input{
 	border-radius: 20px;
     width: 100%;
     height: 100px;
@@ -368,7 +454,7 @@ input{
     font-size: 60px;
 }
 
-input:last-of-type{
+#fcont input:last-of-type{
 	border-radius: 20px;
     width: 100%;
     height: 200px;
@@ -432,3 +518,124 @@ button{
     margin: auto auto;
 }
 
+#signin button{
+    width: 100%;
+    height: auto;
+    padding: 75px;
+    background: url(../img/paper-plane-solid-black.svg) center no-repeat;
+    background-size: contain;
+    outline: none;
+}
+
+#signin{
+    display: none;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#signin h3{
+    font-size: 40px;
+}
+
+#loginform{
+    width: 90%;
+    margin: 0 5% 20px 5%;
+}
+
+#signupform{
+    width: 90%;
+    margin: 0 5% 20px 5%;
+}
+
+#signupform input{
+    border-radius: 0;
+    border: none;
+    border-bottom: 3px solid #777777;
+    width: 100%;
+    height: 100px;
+    margin: 0 0 20px 0;
+    font-size: 60px;
+}
+
+#signin input{
+    border-radius: 0;
+    border: none;
+    border-bottom: 3px solid #777777;
+    width: 100%;
+    height: 100px;
+    margin: 0 0 20px 0;
+    font-size: 60px;
+}
+
+#signin h2{
+    font-size: 100px;
+}
+
+#password p{
+    font-size: 25px;
+    color: #0800EF;
+    float: right;
+}
+
+#passreset{
+    display: none;
+    text-align: center;
+    width: 90%;
+    margin: 0 5% 20px 5%;
+}
+
+#passreset h3{
+    font-size:100px;
+}
+
+#passreset input{
+    border-radius: 0;
+    border: none;
+    border-bottom: 3px solid #777777;
+    width: 100%;
+    height: 100px;
+    margin: 0 0 20px 0;
+    font-size: 60px;
+}
+
+#passreset input{
+    border-radius: 0;
+    border: none;
+    border-bottom: 3px solid #777777;
+    width: 100%;
+    height: 100px;
+    margin: 0 0 20px 0;
+    font-size: 60px;
+}
+
+#passreset button{
+    width: 100%;
+    height: auto;
+    padding: 75px;
+    background: url(../img/paper-plane-solid-black.svg) center no-repeat;
+    background-size: contain;
+    outline: none;
+}
+
+#news{
+    display: none;
+    text-align: center;
+}
+
+#news h3{
+    font-size: 100px;
+}
+
+#news button{
+    width: 100%;
+    height: auto;
+    padding: 75px;
+    background: url(../img/paper-plane-solid-black.svg) center no-repeat;
+    background-size: contain;
+    outline: none;
+}
+
+#news p{
+    color: #1a6f00;
+}

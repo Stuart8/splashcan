@@ -5,6 +5,7 @@
         <title>Splash Can</title>
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css" rel="stylesheet">
 
     
     </head>
@@ -32,7 +33,7 @@
         <div class="overlay">
         <div class="header">
             <img src="img/Splash-can-logo.svg" alt="Splash can logo">
-            <p>Sign in /<br>Register</p>
+            <p class="signin">Sign in /<br>Register</p>
         </div>
         <div class="footer">
             <img src="img/explore-shutter.svg" alt="Explore" class="link-05">
@@ -42,30 +43,59 @@
         
     </div> 
     
+        
     <div id="explore">
         <div id="rotate"></div>
+        <div id="saving">
+            <h3>Saving To Gallery...</h3>
+        </div>
+        <div id="canvas">
+            <div id="paintthin">
+                <img src="img/thinpaint.png" alt="Thin Paint Stroke">
+            </div>
+            <div id="paintthick">
+                <img src="img/Thickpaint.png" alt="Thick Paint Stroke">
+            </div>
+            <div id="bucket">
+                <img src="img/fill.png" alt="Fill">
+            </div>
+        </div>
         <div id="paint-icons">
-		<img src="img/paint-brush-solid.svg" alt="paint-brush">
-		<img src="img/brush-solid.svg" alt="large-brush"> 
-		<img src="img/fill-drip-solid.svg" alt="a-can-of-paint">
-		<img src="img/eraser-solid.svg" alt="an-eraser">		
-	</div>
+            <i class="fa fa-paint-brush blue"></i>
+            <i class="fa fa-brush"></i>
+            <i class="fa fa-fill-drip"></i>
+            <i class="fa fa-eraser"></i>		
+	   </div>
 		
-		<img id="export" src="img/share-square-solid.svg" alt="share-social-media" style="height:70px;width:70px;">
+		<img id="export" src="img/share-square-solid.svg" alt="share-social-media" style="height:70px;width:70px;" onclick="saveimg()">
+        
+        <script>
+        function saveimg(){
+            alert("You have published your art!");
+        }
+        </script>
 	
-		<section>
-<div class="slide">
-	<img src="img/Slider.png" alt="coloured-slider-bar" style="width:220px;height:30px;">
-</div>
-  		</section>
+		
+    <div class="slide" onclick="functionBlue()">
+        <img src="img/Slider.png" alt="coloured-slider-bar">
+        <script>
+        function functionBlue(){
+            console.log("Changing Color To Blue")
+            var elem = document.querySelector('#paint-icons');
+            elem.style.color = '#0093ff';
+        }
+        </script>
+    </div>
 		<div class="social"><div id="text">Project Name</div></div>
 		
 			
-	<div id="Artist"><h3>Created by</h3><h4>Sebastian Sokol</h4></div>
+	<div id="artist">
+        <p>Created By</p>
+        <p>Random User</p>
 	</div>
 	
 	<img id="heart" src="img/heart-solid.svg" alt="heart">
-    
+    </div>
     <div id="about">
      <div id="rotatep"></div>   
     <div class="overlay">
@@ -121,6 +151,63 @@
         </div>
     </div>
     
+    <div id="signin">
+        <h2>Sign in</h2>
+	
+	<form name="signIn" id="loginform">
+	
+		<input type="text" name="u_name" placeholder="Username">
+		
+		<input type="text" name="password" placeholder="Password">
+		
+		<div id="password">
+		<p>Forgot password?</p>
+		</div>
+	</form>
+        
+        <button class="link-01"></button>
+        
+        
+	<h3>Don't have an account?</h3> 
+		
+		
+	
+	<h2>Sign Up</h2>
+	
+	<form id="signupform">
+	
+	
+		<input  type="text" name="u_name2" placeholder="Username">
+		
+		<input type="text" name="email" placeholder="Email">
+		
+		<input type="text" name="password2" placeholder="Password">
+	
+	
+	
+	</form>
+        <button id="signcomp"></button>
+    </div>
+    
+    <div id="passreset">
+            
+          <h3>Password <br> Reset</h3>
+	
+	   <form name="ResetPassword" id="loginform">
+	
+		<input type="text" name="email" placeholder="Email">
+		<input type="text" name="NewPass" placeholder="New Password">
+           <button id="signcomp"></button>
+        </form>
+    </div>
+    
+    <div id="news">
+        <h3>News!</h3>
+        <p>You have successfully signed up!</p>
+        <button class="link-01"></button>
+        <p>Proceed to app!</p>
+    </div>
+    
     <script
   src="http://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -135,7 +222,7 @@
         })
     </script>
     
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
     <script src="js/main.js"></script>
 </body>
 </html>
