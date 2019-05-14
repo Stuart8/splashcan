@@ -43,11 +43,13 @@
         
     </div> 
     
-        
     <div id="explore">
         <div id="rotate"></div>
-        <div id="saving">
-            <h3>Saving To Gallery...</h3>
+        <div id="cartshow">
+            <h3>Show Tools</h3>
+        </div>
+        <div id="carthide">
+            <h3>Hide Tools</h3>
         </div>
         <div id="canvas">
             <div id="paintthin">
@@ -96,6 +98,28 @@
 	
 	<img id="heart" src="img/heart-solid.svg" alt="heart">
     </div>
+    <div id="contauth">
+        <h2>Contact Author</h2>
+	
+	<form name="contact" id="contactauthor">
+	
+		<input type="text" name="u_name" placeholder="Your Name">
+		
+		<input type="text" name="password" placeholder="Your Email">
+        
+        <input type="text" name="password" placeholder="Your Message. . .">
+		<button onclick="msgSent()"></button>
+        <script>
+            function msgSent(){
+                alert("Your message has been sent.")
+            }
+        </script>
+	
+	</form>
+        
+    </div>
+    
+    
     <div id="about">
      <div id="rotatep"></div>   
     <div class="overlay">
@@ -207,6 +231,8 @@
         <button class="link-01"></button>
         <p>Proceed to app!</p>
     </div>
+    
+    
     
     <script
   src="http://code.jquery.com/jquery-3.3.1.min.js"

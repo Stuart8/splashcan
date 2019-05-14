@@ -11,6 +11,7 @@ $(document).ready(function(){
         $('#passreset').hide();
         $('#news').hide();
         $('#home').show();
+        $('#contauth').hide();
     });
     
     $('.link-02').click(function(){
@@ -23,6 +24,7 @@ $(document).ready(function(){
         $('#passreset').hide();
         $('#news').hide();
         $('#about').show();
+        $('#contauth').hide();
     });
     
     $('.link-03').click(function(){
@@ -35,6 +37,7 @@ $(document).ready(function(){
         $('#passreset').hide();
         $('#news').hide();
         $('#feedback').show();
+        $('#contauth').hide();
     }); 
     
     $('.link-04').click(function(){
@@ -47,6 +50,7 @@ $(document).ready(function(){
         $('#passreset').hide();
         $('#news').hide();
         $('#help').show();
+        $('#contauth').hide();
     });
     
     $('.link-05').click(function(){
@@ -59,6 +63,7 @@ $(document).ready(function(){
         $('#passreset').hide();
         $('#news').hide();
         $('#explore').show();
+        $('#contauth').hide();
     });
     
     $('.signin').click(function(){
@@ -83,6 +88,7 @@ $(document).ready(function(){
         $('#passreset').show();
         $('#news').hide();
         $('#explore').hide();
+        $('#contauth').hide();
     });
     
     $('#signcomp').click(function(){
@@ -95,6 +101,39 @@ $(document).ready(function(){
         $('#passreset').hide();
         $('#news').show();
         $('#explore').hide();
+        $('#contauth').hide();
+    });
+    $('#artist').click(function(){
+        $('#home').hide();
+        $('#about').hide();
+        $('#feedback').hide();
+        $('.menu').hide();
+        $('#help').hide();
+        $('#signin').hide();
+        $('#passreset').hide();
+        $('#news').hide();
+        $('#explore').hide();
+        $('#contauth').show();
+    });
+    $('#cartshow').click(function(){
+        $('#cartshow').hide();
+        $('#carthide').show();
+        $('#paint-icons').show();
+        $('#export').show();
+        $('.slide').show();
+        $('.social').show();
+        $('#artist').show();
+        $('#heart').show();
+    });
+    $('#carthide').click(function(){
+        $('#cartshow').show();
+        $('#carthide').hide();
+        $('#paint-icons').hide();
+        $('#export').hide();
+        $('.slide').hide();
+        $('.social').hide();
+        $('#artist').hide();
+        $('#heart').hide();
     });
     
     $('.fa-paint-brush').click(function(){

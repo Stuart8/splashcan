@@ -202,23 +202,39 @@ p{
     display: none;
 }
 
-#saving{
-    width: 100%;
-    height: 100vh;
-    background: #fcfcfc;
+#cartshow{
+    background: rgba(255, 255, 255, 0.82);
     position: absolute;
     z-index: 100;
+    top: 0;
+    padding: 20px;
+    border-bottom-right-radius: 40px;
+}
+
+#cartshow h3{
+    color: #525252;
+    font-weight: 500;
+    font-size: 20px;
+    margin: 0;
+    text-align: center;
+}
+
+#carthide{
+    background: rgba(255, 255, 255, 0.82);
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    padding: 20px;
+    border-bottom-right-radius: 40px;
     display: none;
 }
 
-#saving h3{
+#carthide h3{
     color: #525252;
     font-weight: 500;
-    font-size: 50px;
+    font-size: 20px;
     margin: 0;
     text-align: center;
-    line-height: 90vh;
-    height: 100vh;
 }
 
 #paint-icons{
@@ -231,6 +247,7 @@ p{
 	border-top:none;
 	margin:0 auto;
     color: #fff;
+    display: none;
 }
 
 #paint-icons i{
@@ -245,13 +262,14 @@ p{
     overflow: auto;
 	position:relative;	
 	margin: 0 auto;
+    display: none;
 }
 
 .slide img{
     width: 100%;
 }
 
-div .social{
+.social{
 	width: 45px;
 	height:50%;
 	background:#C2C2C2;	
@@ -260,6 +278,7 @@ div .social{
 	right: 9px;
 	border:#FFFFFF 3px solid;
 	border-radius: 10px;
+    display: none;
 }
 div .social #text{
 	color:#FFFFFF;
@@ -273,6 +292,7 @@ div .social #text{
 	position: absolute;
 	right: 4px;
 	top: 8px;
+    display: none;
 }
 
 #heart{
@@ -281,6 +301,7 @@ div .social #text{
 	position:absolute;
     right: 4px;
 	bottom: 8px;
+    display: none;
 }
 
 #artist{
@@ -291,6 +312,7 @@ div .social #text{
 	height: auto;
     overflow: auto;
 	margin: 0 25%;
+    display: none;
 }
 
 #artist p{
@@ -570,6 +592,7 @@ button{
 
 #signin h2{
     font-size: 100px;
+    margin: 0;
 }
 
 #password p{
@@ -587,6 +610,7 @@ button{
 
 #passreset h3{
     font-size:100px;
+    margin: 0;
 }
 
 #passreset input{
@@ -625,6 +649,7 @@ button{
 
 #news h3{
     font-size: 100px;
+    margin: 0;
 }
 
 #news button{
@@ -638,4 +663,42 @@ button{
 
 #news p{
     color: #1a6f00;
+}
+
+
+#contactauthor button{
+    width: 20%;
+    height: auto;
+    padding: 50px;
+    background: url(../img/paper-plane-solid-black.svg) center no-repeat;
+    background-size: contain;
+    outline: none;
+    float: right;
+}
+
+#contauth{
+    display: none;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#contactauthor{
+    width: 90%;
+    margin: 0 5% 20px 5%;
+}
+
+#contactauthor input{
+    border-radius: 0;
+    border: none;
+    border-bottom: 3px solid #777777;
+    width: 80%;
+    height: 100px;
+    margin: 0 0 20px 0;
+    font-size: 60px;
+    float: left;
+}
+
+#contauth h2{
+    margin: 0;
 }
