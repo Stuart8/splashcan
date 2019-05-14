@@ -237,6 +237,24 @@ p{
     text-align: center;
 }
 
+#viewauth{
+    background: rgba(255, 255, 255, 0.82);
+    position: absolute;
+    z-index: 100;
+    bottom: 0;
+    padding: 20px;
+    border-top-right-radius: 40px;
+}
+
+#viewauth h3{
+    color: #525252;
+    font-weight: 500;
+    font-size: 20px;
+    margin: 0;
+    text-align: center;
+}
+
+
 #paint-icons{
 	height:70px;
 	width:70%;
@@ -271,14 +289,15 @@ p{
 
 .social{
 	width: 45px;
-	height:50%;
-	background:#C2C2C2;	
-	float:right;
-	position: relative;
-	right: 9px;
-	border:#FFFFFF 3px solid;
-	border-radius: 10px;
+    height: 50%;
+    background: #C2C2C2;
+    float: right;
+    position: absolute;
+    right: 9px;
+    border: #FFFFFF 3px solid;
+    border-radius: 10px;
     display: none;
+    top: 110px;
 }
 div .social #text{
 	color:#FFFFFF;
@@ -323,6 +342,23 @@ div .social #text{
 
 #artist p:last-child{
     text-decoration: underline;
+}
+
+#randart{
+	height: 100vh;
+    position: absolute;
+    display: none;
+    width: 100%;
+    overflow: hidden;
+}
+
+#randart img{
+    width: 50%;
+    height: auto;
+    padding-bottom: 100%;
+    position: relative;
+    left: 30%;
+    top: 10%;
 }
 
 #paintthin{

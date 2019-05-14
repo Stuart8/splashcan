@@ -121,9 +121,10 @@ $(document).ready(function(){
         $('#paint-icons').show();
         $('#export').show();
         $('.slide').show();
-        $('.social').show();
-        $('#artist').show();
-        $('#heart').show();
+        $('.social').hide();
+        $('#artist').hide();
+        $('#heart').hide();
+        $('#randart').hide();
     });
     $('#carthide').click(function(){
         $('#cartshow').show();
@@ -131,9 +132,20 @@ $(document).ready(function(){
         $('#paint-icons').hide();
         $('#export').hide();
         $('.slide').hide();
-        $('.social').hide();
         $('#artist').hide();
         $('#heart').hide();
+        $('#randart').hide();
+    });
+    $('#viewauth').click(function(){
+        $('#cartshow').show();
+        $('#carthide').hide();
+        $('#paint-icons').hide();
+        $('#export').show();
+        $('.slide').hide();
+        $('.social').show();
+        $('#artist').show();
+        $('#heart').show();
+        $('#randart').show();
     });
     
     $('.fa-paint-brush').click(function(){
