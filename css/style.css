@@ -45,7 +45,7 @@ p{
     z-index: 100;
 }
 
-#rotatep{
+.rotatep{
     width: 100%;
     height: 100vh;
     background: url(../img/Rotatedeviceport.png) center no-repeat;
@@ -405,7 +405,7 @@ div .social #text{
 }
 
 @media (orientation: landscape){
-    #rotatep{
+    .rotatep{
         display: block;
     }
     .mcont a{
@@ -597,6 +597,9 @@ button{
 }
 
 #loginform{
+    width: 90%;
+    margin: 0 5% 20px 5%;
+}#loginform2{
     width: 90%;
     margin: 0 5% 20px 5%;
 }
